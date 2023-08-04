@@ -1,0 +1,127 @@
+/* 배경 이미지 스타일링*/
+/* <!--   <div class= "background">
+<img src= "/plant.jpg" alt="back">    <!--배경이미지--> --> */
+
+/* 상단부 안의 이미지 스타일링을 위한 css */
+.logo{ 
+    width: 300px; 
+    height: 110px; 
+    display: block;
+    margin: auto;
+
+
+}
+#top_menu {
+    font-weight: bold; /*글자 두께*/
+    color: olive;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+/* 버튼 스타일링 */
+.btn {
+    display: inline-block; /* 인라인 블록 요소로 설정하여 여러 버튼을 한 줄에 배치할 수 있도록 함 */
+    padding: 10px 20px; /* 버튼의 여백을 설정 */
+    background-color: khaki; /* 원하는 배경색으로 설정 */
+    color: #fff; /* 버튼 텍스트의 색상을 설정 */
+    text-decoration: none; /* 밑줄을 제거하여 버튼으로 보이도록 함 */
+    border-radius: 5px; /* 버튼의 모서리를 둥글게 만듦 */
+    font-size: 16px; /* 버튼 텍스트의 크기를 설정 */
+  }
+  
+  /* 버튼에 마우스를 올렸을 때의 스타일링 */
+  .btn:hover {
+    background-color: black; /* 마우스를 올렸을 때의 배경색을 변경 */
+  }
+  
+
+
+/* article 안의 이미지 스타일링을 위한 CSS */
+.images {
+    width: 500px; /* 이미지 너비를 100%로 설정하여 article과 동일한 너비로 맞춤 */
+    height: 300px; /* 원하는 세로 크기를 설정 (이 예시에서는 300px로 설정) */
+    object-fit: cover; /* 이미지가 찌그러지지 않도록 object-fit을 설정 */
+    /*margin: 0 auto; /* 중앙정렬을 위해 margin을 설정 */
+    background-position: absolute;
+    left: 10px;
+  }
+
+article p{
+    font-size: 20px;
+    font-style: italic;
+    color: green;
+    text-align: left;
+}
+
+.threeD{
+    width: 300px;
+    height: 300px;
+    bottom: 10px;
+    position: absolute;
+    right: 50px;
+    object-fit: cover;
+
+}
+/* 이미지 링크 스타일링 */
+.image-link {
+    border: 2px solid black; /* 클릭 영역에 테두리를 추가 */
+    display: inline-block; /* 인라인 블록 요소로 설정하여 이미지 크기에 맞게 테두리를 설정 */
+    padding: 5px; /* 테두리와 이미지 사이의 간격을 설정 */
+  }
+  
+
+/* 하단부 스타일링을 위한 CSS*/
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: black;
+}
+
+/*링크 페이지 배경CSS*,/* 컨테이너 스타일링 */
+.background {
+    background-image: url("/plant.jpg"); /* 배경 이미지를 설정 */
+    background-size: cover; /* 배경 이미지를 화면에 꽉 차게 조절 */
+    background-position: center; /* 배경 이미지를 가운데 정렬 */
+    height: 100vh; /* 화면 전체 높이로 컨테이너 높이를 설정 */
+    padding: 20px; /* 내용과 배경 사이의 여백을 설정 */
+    /*text-align: center; /* 내용의 가운데 정렬을 설정 */
+    /*color: #ffffff; /* 글씨의 색상을 설정 */
+}
+
+h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+
+}
+
+/*스펙 스타일링*/
+.threeDs {
+    width: 600px;
+    height: 600px;
+    display: block;         /*중앙정렬*/
+    margin-top: auto;       
+    margin-bottom: auto;
+    left: 100px;
+}
+/*스펙 상단 홈키*/
+.spechome {
+  position: fixed; /* 버튼을 화면에 고정시킴 */
+  top: 50px; /* 화면 위에서부터 10px 위치에 버튼 배치 */
+  right: 80px; /* 화면 오른쪽에서부터 10px 위치에 버튼 배치 */
+  color: #fff; /* 버튼 텍스트 색상 설정 */
+  text-decoration: none; /* 밑줄 제거하여 버튼으로 보이도록 함 */
+  border-radius: 5px; /* 버튼의 모서리를 둥글게 만듦 */
+}
+
+.spechome:hover {
+    background-color: khaki; /* 마우스를 올렸을 때의 배경색을 변경 */ 
+}
+.images{
+    float:left;
+    width: 850px;
+    height: 300px;
+}
+
