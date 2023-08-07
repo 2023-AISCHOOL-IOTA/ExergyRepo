@@ -1,0 +1,194 @@
+/* 상단부 안의 이미지 스타일링을 위한 css */
+.logo{ 
+    width: 300px; 
+    height: 110px; 
+    display: block;
+    margin: auto;      /*중앙배역*/
+}
+
+#top_menu {
+    font-weight: bold; /*글자 두께*/
+    color: olive;
+    position: absolute;
+    top: 90px;
+    right: 30px;
+}
+
+/* 버튼 스타일링 */
+.btn {
+    display: inline-block; /* 인라인 블록 요소로 설정하여 여러 버튼을 한 줄에 배치할 수 있도록 함 */
+    padding: 10px 20px; /* 버튼의 여백을 설정 */
+    background-color: khaki; /* 원하는 배경색으로 설정 */
+    color: #fff; /* 버튼 텍스트의 색상을 설정 */
+    text-decoration: none; /* 밑줄을 제거하여 버튼으로 보이도록 함 */
+    border-radius: 5px; /* 버튼의 모서리를 둥글게 만듦 */
+    font-size: 16px; /* 버튼 텍스트의 크기를 설정 */
+  }
+  
+  /* 버튼에 마우스를 올렸을 때의 스타일링 */
+  .btn:hover {
+    background-color: black; /* 마우스를 올렸을 때의 배경색을 변경 */
+  }
+  
+
+
+/* article 안의 이미지 스타일링을 위한 CSS */
+/* 이미지 컨테이너 스타일링 */
+.container {
+    position: relative; /* 내부 요소들을 절대적인 위치로 조정하기 위해 컨테이너를 상대적으로 설정 */
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+/* 이미지 스타일링 */
+.salad{
+    float: left; /* 이미지를 왼쪽으로 띄움 */
+    margin-right: 10px; /* 이미지와 텍스트 사이의 간격을 설정 */
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+    background-position: absolute;
+    left: 10px;
+  }
+
+/* 텍스트 스타일링 */
+.container .text {
+    overflow: hidden; /*내용이 컨테이너를 넘어가지 않도록*/
+    position: absolute; /* 내부 요소들과 겹쳐지게 하기 위해 절대적인 위치로 설정 */
+    text-align: left;
+    top: 150px;
+    left: 20px;
+    /* transform: translate(-50%, -50%); 컨테이너의 정중앙에 위치하도록 설정 */
+    text-shadow: 2px 2px 2px gray;
+    font-style: italic;
+}
+  
+.text h2 {
+    font-size: 30px; /* 제목의 크기를 설정 */
+    color: white;
+}
+  
+.text p {
+    font-size: 25px; /* 내용의 크기를 설정 */
+    color: white;
+}
+  
+/* .container{
+    overflow: hidden;
+} */
+
+/* .salad {
+    width: 500px; /* 이미지 너비를 100%로 설정하여 article과 동일한 너비로 맞춤 */
+    /* height: 300px; 원하는 세로 크기를 설정 (이 예시에서는 300px로 설정) */
+    /* object-fit: cover; 이미지가 찌그러지지 않도록 object-fit을 설정 */
+    /*margin: 0 auto; /* 중앙정렬을 위해 margin을 설정 */
+    /* float: left;  해당 요소를 문서의 왼쪽에 배치 : 필요한 너비만 콘텐츠를 차지하고 다른 요소가 들어올 만큼 공간을 비워둔다 */
+    /* background-position: absolute; */
+    /* left: 10px; */
+
+/* article p{
+    font-size: 25px;
+    font-style: italic;
+    color: green;
+    text-align: left;
+    text-shadow: 2px 2px 2px gray;    /* 폰트에 그림자 효과*/
+
+
+/* 이미지 링크 스타일링 */
+.image-link {
+    border: 2px solid black; /* 클릭 영역에 테두리를 추가 */
+    display: inline-block; /* 인라인 블록 요소로 설정하여 이미지 크기에 맞게 테두리를 설정 */
+    padding: 5px; /* 테두리와 이미지 사이의 간격을 설정 */
+}
+
+.threeD{
+    width: 200px; 
+    height: 100px; 
+    display: block;
+    margin: left;  
+    bottom: 10px;
+    object-fit: cover;
+    <a href="http://127.0.0.1:5500/SPEC.html" alt="image-link">
+    <img src = "/web/specimage.jpg" class="threeD">
+}
+/* 이미지 링크 html */
+/* <input type="button" class="img-button" onclick="alert('클릭!')"> */
+/* 이미지 링크 css  */
+/* background: url() : 버튼 배경 이미지의 경로
+no-repeat; : 배경 이미지를 반복하지 않음
+width: 배경 이미지의 너비
+height: 배경 이미지의 높이 */
+
+/* 하단부 스타일링을 위한 CSS*/
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: black;
+}
+
+/*링크 페이지 배경CSS*, /* 컨테이너 스타일링 */
+.background {
+    /*background-image: url("/plant.jpg"); /* 배경 이미지를 설정 */
+    /*background-size: 100% 100%; /* 배경 이미지를 화면에 꽉 차게 조절 */
+    /*background-position: center; /* 배경 이미지를 가운데 정렬 */
+    /*height: 100vh; /* 화면 전체 높이로 컨테이너 높이를 설정 */
+    /*padding: 20px; /* 내용과 배경 사이의 여백을 설정 */
+    /*text-align: center; /* 내용의 가운데 정렬을 설정 */
+    /*color: #ffffff; /* 글씨의 색상을 설정 */
+    background-image: url("/web/plant.jpg");
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    background-size: 100% 100%;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Verdana;   /*글꼴*/
+    text-align: right;       /*정렬*/
+    top: 350px;
+    right: 100px;
+
+}
+
+/*스펙 스타일링*/
+/* 컨테이너 스타일링 */
+.s_container{
+    width: 50%; /* 컨테이너의 너비 설정 */
+    height: 100%
+}
+  
+/* 이미지 스타일링 */
+.s_container .threeDs{
+    float: left; /* 이미지를 왼쪽으로 띄움 */
+    margin-right: 10px; /* 이미지와 텍스트 사이의 간격을 설정 */
+    width: 600px;
+    height: 600px;
+    display: block;
+    background-position: center;   
+}
+  
+/* 텍스트 스타일링 */
+.s_container .text {
+    overflow: hidden; /* 텍스트가 컨테이너를 넘어가지 않도록 설정 */
+    top: 50%; /* 컨테이너의 세로 방향 중앙에 위치 */
+    left: 50%; /* 컨테이너의 가로 방향 중앙에 위치 */
+    transform: translate(-50%, -50%); /* 컨테이너의 정중앙에 위치하도록 설정 */
+    font-style: black;
+    font-size: 15px;
+    font-family: Verdana;
+    text-align: right;
+
+}
+
+/* 도표 */
+.images{
+    float:left;
+    width: 850px;
+    height: 300px;
+}
+
