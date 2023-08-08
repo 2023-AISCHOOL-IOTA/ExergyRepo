@@ -45,10 +45,13 @@
     float: left; /* 이미지를 왼쪽으로 띄움 */
     margin-right: 10px; /* 이미지와 텍스트 사이의 간격을 설정 */
     width: 100%; 
-    height: 600px; 
+    height: 500px; 
     object-fit: cover; 
     background-position: absolute;
     left: 10px;
+    image-rendering: -webkit-optimize-contrast;
+    transform:translateZ(0);
+    backface-visibility: hidden;
   }
 
 /* 텍스트 스타일링 */
