@@ -9,7 +9,7 @@
 </head>
 
 <!-- 배경색 -->
-<body style="background-color:#FBF5EF" >
+<body style="background-color:lightgray" >
     <!-- style="background-color:#FBF5EF" -->
     <!-- style="background:linear-gradient(to bottom, white,#cfc2b6);" -->
     <header>   
@@ -20,9 +20,12 @@
         <nav>   
             <ul>
                 <div id="top_menu" >
-                    <a href = "http:///192.168.21.161:5000/"  class = "btn" target = "_self">홈</a>
+                    <!-- <a href = "http:///192.168.21.161:5000/"  class = "btn" target = "_self">홈</a>
                     <a href = "http:///192.168.21.161:5000/temp" class = "btn" target = "_self">온도/습도</a>
-                    <a href = "http:///192.168.21.161:5000/spec" class = "btn" target = "_self">사양</a>
+                    <a href = "http:///192.168.21.161:5000/spec" class = "btn" target = "_self">사양</a> -->
+                    <a href = "http://127.0.0.1:5500/web/templates/HOME.html"  class = "btn" target = "_self">홈</a>
+                    <a href = "http://127.0.0.1:5500/web/templates/TEMP.html" class = "btn" target = "_self">온도/습도</a>
+                    <a href = "http://127.0.0.1:5500/web/templates/SPEC.html" class = "btn" target = "_self">사양</a>
             </ul>
         </nav>
     </header>
@@ -31,7 +34,7 @@
     <main role = "main"> 
         <!--정보-->
         <div class="container">
-            <img src="../static/salad.jpg" class="salad">
+            <img src="../static/homeimage.jpg" class="homeimage">
             <div class="text">
               <h2>매일 건강한 한 끼 식사</h2>
               <p>집에서도 쉽게 신선한 경험을 제공합니다</p>
