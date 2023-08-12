@@ -3,26 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HomeKeyFarm</title>
 
     <link rel = "stylesheet" href = "../static/style.css">
 
 </head>
-<body>
+<body style="background-color:darkcyan">
     <div class="background">
     </div>
     <div class="info">
-        <li>현재의 온도는 24도입니다</li>
-        <li>현재의 습도는 24%입니다</li>
+        <h1>PLANT 1</h1>
+        <li>현재의 온도는 {{ temp }}℃ 입니다</li>
+        <li>현재의 습도는 {{ hum }}% 입니다</li>
     </div>
-    <nav>
-        <ul>
-            <div id="top_menu" >
-                <a href = "http:///192.168.21.161:5000/"  class = "btn" target = "_self">홈</a>
-                <a href = "http:///192.168.21.161:5000/temp" class = "btn" target = "_self">온도/습도</a>
-                <a href = "http:///192.168.21.161:5000/spec" class = "btn" target = "_self">사양</a>
-            </div>
-        </ul>
-    </nav> 
 </body>
 </html>
