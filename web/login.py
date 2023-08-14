@@ -1,10 +1,9 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for,flash
 import mysql.connector
-from apscheduler.schedulers.background import BackgroundScheduler
+
 
 app = Flask(__name__)
 
-scheduler = BackgroundScheduler()
 
 # MySQL 데이터베이스 연결 설정
 db_config = {
@@ -54,23 +53,11 @@ def get_temp_hum():
 def index():
     return render_template('login1.html')  # HTML 파일 이름
 
-@scheduler.scheduled_job('interval', minutes=30)
-def update_data():
-    temp, hum = get_temp_hum()
-    app.config['TEMP'] = temp
-    app.config['HUM'] = hum
-
-scheduler.start()
-
-app.config['TEMP'] = None
-app.config['HUM'] = None
-
 
 # TEMP 라우트에서 온습도 값 가져오는 함수 호출
 @app.route('/TEMP')
 def temp():
-    temp = app.config['TEMP']
-    hum = app.config['HUM']
+    temp , hum = get_temp_hum()
     return render_template('TEMP.html', temp=temp, hum=hum)
 
 
