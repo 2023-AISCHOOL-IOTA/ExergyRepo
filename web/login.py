@@ -60,6 +60,21 @@ def temp():
     temp , hum = get_temp_hum()
     return render_template('TEMP.html', temp=temp, hum=hum)
 
+@app.route('/insert_temp', methods=['GET'])
+def insert_temp():
+    connection = mysql.connector.connect(**db_config)
+    sensor_id = request.args.get('sensor')
+    temperature = request.args.get('temp')
+
+    try:
+        with connection.cursor() as cursor:
+            sql = "INSERT INTO temp (Sensor_ID, Temp_Value) VALUES (%s, %s)"
+            cursor.execute(sql, (sensor_id, float(temperature)))
+        connection.commit()
+        return 'Success', 200
+    except Exception as e:
+        return str(e), 500
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -138,4 +153,4 @@ def login():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000,debug=True)
