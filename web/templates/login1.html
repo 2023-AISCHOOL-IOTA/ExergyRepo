@@ -5,6 +5,14 @@
     <link rel = "stylesheet" href = "../static/login.css">
 </head>
 <body class="login">
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <script>
+            alert("{{ messages[-1] }}");
+        </script>
+        {% endif %}
+    {% endwith %}
+
     <div class="login-form">
         <img src="../static/logo.jpg" class="loglogo">
         <form action="/login" method="post">
